@@ -1,0 +1,23 @@
+#body{
+  background-color: black;
+}
+
+.container{
+  margin-top: 75px;
+  align-items: center;
+}
+
+#input{
+  color:white;
+  background-color: transparent;
+}
+
+#button{
+  color:white;
+  background-color: transparent;
+  border:1px solid white;
+}
+
+#button:click{
+  background-color: red;
+}

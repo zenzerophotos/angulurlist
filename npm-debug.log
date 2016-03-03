@@ -1,0 +1,615 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'morgan',
+1 verbose cli   'express',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of C:\Users\Shido\Documents\gdev lessons\angularlist\package.json
+5 warn package.json angularlist@1.0.0 No description
+6 warn package.json angularlist@1.0.0 No repository field.
+7 warn package.json angularlist@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express\package.json
+9 verbose installManyTop reading scoped package data from C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan\package.json
+10 verbose readDependencies loading dependencies from C:\Users\Shido\Documents\gdev lessons\angularlist\package.json
+11 verbose install morgan is installed as 1.7.0
+12 silly cache add args [ 'morgan@^1.7.0', null ]
+13 verbose cache add spec morgan@^1.7.0
+14 verbose install express is installed as 4.13.4
+15 silly cache add args [ 'express@^4.13.4', null ]
+16 verbose cache add spec express@^4.13.4
+17 silly cache add parsed spec Result {
+17 silly cache add   raw: 'morgan@^1.7.0',
+17 silly cache add   scope: null,
+17 silly cache add   name: 'morgan',
+17 silly cache add   rawSpec: '^1.7.0',
+17 silly cache add   spec: '>=1.7.0 <2.0.0',
+17 silly cache add   type: 'range' }
+18 silly addNamed morgan@>=1.7.0 <2.0.0
+19 verbose addNamed ">=1.7.0 <2.0.0" is a valid semver range for morgan
+20 silly addNameRange { name: 'morgan', range: '>=1.7.0 <2.0.0', hasData: false }
+21 silly mapToRegistry name morgan
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/morgan
+25 verbose addNameRange registry:https://registry.npmjs.org/morgan not in flight; fetching
+26 silly cache add parsed spec Result {
+26 silly cache add   raw: 'express@^4.13.4',
+26 silly cache add   scope: null,
+26 silly cache add   name: 'express',
+26 silly cache add   rawSpec: '^4.13.4',
+26 silly cache add   spec: '>=4.13.4 <5.0.0',
+26 silly cache add   type: 'range' }
+27 silly addNamed express@>=4.13.4 <5.0.0
+28 verbose addNamed ">=4.13.4 <5.0.0" is a valid semver range for express
+29 silly addNameRange { name: 'express', range: '>=4.13.4 <5.0.0', hasData: false }
+30 silly mapToRegistry name express
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/express
+34 verbose addNameRange registry:https://registry.npmjs.org/express not in flight; fetching
+35 verbose request uri https://registry.npmjs.org/morgan
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 8:17:17 PM
+38 verbose request id 3e91cf168e42c9ac
+39 verbose etag "A5FW1M5E54J4NUOD8K6JV8GBJ"
+40 http request GET https://registry.npmjs.org/morgan
+41 verbose request uri https://registry.npmjs.org/express
+42 verbose request no auth needed
+43 info attempt registry request try #1 at 8:17:17 PM
+44 verbose etag "7DJH499I9DU0JUFSG5U4A6WAU"
+45 http request GET https://registry.npmjs.org/express
+46 http 304 https://registry.npmjs.org/morgan
+47 verbose headers { date: 'Thu, 03 Mar 2016 01:17:09 GMT',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   'cache-control': 'max-age=300',
+47 verbose headers   etag: '"A5FW1M5E54J4NUOD8K6JV8GBJ"',
+47 verbose headers   age: '224',
+47 verbose headers   connection: 'keep-alive',
+47 verbose headers   'x-served-by': 'cache-atl6238-ATL',
+47 verbose headers   'x-cache': 'HIT',
+47 verbose headers   'x-cache-hits': '2',
+47 verbose headers   'x-timer': 'S1456967829.054399,VS0,VE0',
+47 verbose headers   vary: 'Accept' }
+48 silly get cb [ 304,
+48 silly get   { date: 'Thu, 03 Mar 2016 01:17:09 GMT',
+48 silly get     via: '1.1 varnish',
+48 silly get     'cache-control': 'max-age=300',
+48 silly get     etag: '"A5FW1M5E54J4NUOD8K6JV8GBJ"',
+48 silly get     age: '224',
+48 silly get     connection: 'keep-alive',
+48 silly get     'x-served-by': 'cache-atl6238-ATL',
+48 silly get     'x-cache': 'HIT',
+48 silly get     'x-cache-hits': '2',
+48 silly get     'x-timer': 'S1456967829.054399,VS0,VE0',
+48 silly get     vary: 'Accept' } ]
+49 verbose etag https://registry.npmjs.org/morgan from cache
+50 verbose get saving morgan to C:\Users\Shido\AppData\Roaming\npm-cache\registry.npmjs.org\morgan\.cache.json
+51 http 304 https://registry.npmjs.org/express
+52 verbose headers { date: 'Thu, 03 Mar 2016 01:17:09 GMT',
+52 verbose headers   via: '1.1 varnish',
+52 verbose headers   'cache-control': 'max-age=300',
+52 verbose headers   etag: '"7DJH499I9DU0JUFSG5U4A6WAU"',
+52 verbose headers   age: '58',
+52 verbose headers   connection: 'keep-alive',
+52 verbose headers   'x-served-by': 'cache-atl6230-ATL',
+52 verbose headers   'x-cache': 'HIT',
+52 verbose headers   'x-cache-hits': '2',
+52 verbose headers   'x-timer': 'S1456967829.062215,VS0,VE0',
+52 verbose headers   vary: 'Accept' }
+53 silly get cb [ 304,
+53 silly get   { date: 'Thu, 03 Mar 2016 01:17:09 GMT',
+53 silly get     via: '1.1 varnish',
+53 silly get     'cache-control': 'max-age=300',
+53 silly get     etag: '"7DJH499I9DU0JUFSG5U4A6WAU"',
+53 silly get     age: '58',
+53 silly get     connection: 'keep-alive',
+53 silly get     'x-served-by': 'cache-atl6230-ATL',
+53 silly get     'x-cache': 'HIT',
+53 silly get     'x-cache-hits': '2',
+53 silly get     'x-timer': 'S1456967829.062215,VS0,VE0',
+53 silly get     vary: 'Accept' } ]
+54 verbose etag https://registry.npmjs.org/express from cache
+55 verbose get saving express to C:\Users\Shido\AppData\Roaming\npm-cache\registry.npmjs.org\express\.cache.json
+56 silly addNameRange number 2 { name: 'morgan', range: '>=1.7.0 <2.0.0', hasData: true }
+57 silly addNameRange versions [ 'morgan',
+57 silly addNameRange   [ '1.0.0',
+57 silly addNameRange     '1.0.1',
+57 silly addNameRange     '1.1.0',
+57 silly addNameRange     '1.1.1',
+57 silly addNameRange     '1.2.0',
+57 silly addNameRange     '1.2.1',
+57 silly addNameRange     '1.2.2',
+57 silly addNameRange     '1.2.3',
+57 silly addNameRange     '1.3.0',
+57 silly addNameRange     '1.3.1',
+57 silly addNameRange     '1.3.2',
+57 silly addNameRange     '1.4.0',
+57 silly addNameRange     '1.4.1',
+57 silly addNameRange     '1.5.0',
+57 silly addNameRange     '1.5.1',
+57 silly addNameRange     '1.5.2',
+57 silly addNameRange     '1.5.3',
+57 silly addNameRange     '1.6.0',
+57 silly addNameRange     '1.6.1',
+57 silly addNameRange     '1.7.0' ] ]
+58 silly addNamed morgan@1.7.0
+59 verbose addNamed "1.7.0" is a plain semver version for morgan
+60 silly addNameRange number 2 { name: 'express', range: '>=4.13.4 <5.0.0', hasData: true }
+61 silly addNameRange versions [ 'express',
+61 silly addNameRange   [ '0.14.0',
+61 silly addNameRange     '0.14.1',
+61 silly addNameRange     '1.0.0',
+61 silly addNameRange     '1.0.1',
+61 silly addNameRange     '1.0.2',
+61 silly addNameRange     '1.0.3',
+61 silly addNameRange     '1.0.4',
+61 silly addNameRange     '1.0.5',
+61 silly addNameRange     '1.0.6',
+61 silly addNameRange     '1.0.7',
+61 silly addNameRange     '1.0.8',
+61 silly addNameRange     '2.0.0',
+61 silly addNameRange     '2.1.0',
+61 silly addNameRange     '2.1.1',
+61 silly addNameRange     '2.2.0',
+61 silly addNameRange     '2.2.1',
+61 silly addNameRange     '2.2.2',
+61 silly addNameRange     '2.3.0',
+61 silly addNameRange     '2.3.1',
+61 silly addNameRange     '2.3.2',
+61 silly addNameRange     '2.3.3',
+61 silly addNameRange     '2.3.4',
+61 silly addNameRange     '2.3.5',
+61 silly addNameRange     '2.3.6',
+61 silly addNameRange     '2.3.7',
+61 silly addNameRange     '2.3.8',
+61 silly addNameRange     '2.3.9',
+61 silly addNameRange     '2.3.10',
+61 silly addNameRange     '2.3.11',
+61 silly addNameRange     '2.3.12',
+61 silly addNameRange     '2.4.0',
+61 silly addNameRange     '2.4.1',
+61 silly addNameRange     '2.4.2',
+61 silly addNameRange     '2.4.3',
+61 silly addNameRange     '2.4.4',
+61 silly addNameRange     '2.4.5',
+61 silly addNameRange     '2.4.6',
+61 silly addNameRange     '2.4.7',
+61 silly addNameRange     '2.5.0',
+61 silly addNameRange     '2.5.1',
+61 silly addNameRange     '2.5.2',
+61 silly addNameRange     '2.5.3',
+61 silly addNameRange     '2.5.4',
+61 silly addNameRange     '2.5.5',
+61 silly addNameRange     '2.5.6',
+61 silly addNameRange     '2.5.7',
+61 silly addNameRange     '2.5.8',
+61 silly addNameRange     '2.5.9',
+61 silly addNameRange     '2.5.10',
+61 silly addNameRange     '2.5.11',
+61 silly addNameRange     '3.0.0',
+61 silly addNameRange     '3.0.1',
+61 silly addNameRange     '3.0.2',
+61 silly addNameRange     '3.0.3',
+61 silly addNameRange     '3.0.4',
+61 silly addNameRange     '3.0.5',
+61 silly addNameRange     '3.0.6',
+61 silly addNameRange     '3.1.0',
+61 silly addNameRange     '3.1.1',
+61 silly addNameRange     '3.1.2',
+61 silly addNameRange     '3.2.0',
+61 silly addNameRange     '3.2.1',
+61 silly addNameRange     '3.2.2',
+61 silly addNameRange     '3.2.3',
+61 silly addNameRange     '3.2.4',
+61 silly addNameRange     '3.2.5',
+61 silly addNameRange     '3.2.6',
+61 silly addNameRange     '3.3.0',
+61 silly addNameRange     '3.3.1',
+61 silly addNameRange     '3.3.2',
+61 silly addNameRange     '3.3.3',
+61 silly addNameRange     '3.3.4',
+61 silly addNameRange     '3.3.5',
+61 silly addNameRange     '3.3.6',
+61 silly addNameRange     '1.0.0-beta',
+61 silly addNameRange     '1.0.0-beta2',
+61 silly addNameRange     '1.0.0-rc',
+61 silly addNameRange     '1.0.0-rc2',
+61 silly addNameRange     '1.0.0-rc3',
+61 silly addNameRange     '1.0.0-rc4',
+61 silly addNameRange     '2.0.0-beta',
+61 silly addNameRange     '2.0.0-beta2',
+61 silly addNameRange     '2.0.0-beta3',
+61 silly addNameRange     '2.0.0-rc',
+61 silly addNameRange     '2.0.0-rc2',
+61 silly addNameRange     '2.0.0-rc3',
+61 silly addNameRange     '3.0.0-alpha1',
+61 silly addNameRange     '3.0.0-alpha2',
+61 silly addNameRange     '3.0.0-alpha3',
+61 silly addNameRange     '3.0.0-alpha4',
+61 silly addNameRange     '3.0.0-alpha5',
+61 silly addNameRange     '3.0.0-beta1',
+61 silly addNameRange     '3.0.0-beta2',
+61 silly addNameRange     '3.0.0-beta3',
+61 silly addNameRange     '3.0.0-beta4',
+61 silly addNameRange     '3.0.0-beta6',
+61 silly addNameRange     '3.0.0-beta7',
+61 silly addNameRange     '3.0.0-rc1',
+61 silly addNameRange     '3.0.0-rc2',
+61 silly addNameRange     '3.0.0-rc3',
+61 silly addNameRange     '3.0.0-rc4',
+61 silly addNameRange     '3.0.0-rc5',
+61 silly addNameRange     '3.3.7',
+61 silly addNameRange     '3.3.8',
+61 silly addNameRange     '3.4.0',
+61 silly addNameRange     '3.4.1',
+61 silly addNameRange     '3.4.2',
+61 silly addNameRange     '3.4.3',
+61 silly addNameRange     '3.4.4',
+61 silly addNameRange     '3.4.5',
+61 silly addNameRange     '3.4.6',
+61 silly addNameRange     '3.4.7',
+61 silly addNameRange     '3.4.8',
+61 silly addNameRange     '4.0.0-rc1',
+61 silly addNameRange     '4.0.0-rc2',
+61 silly addNameRange     '3.5.0',
+61 silly addNameRange     '4.0.0-rc3',
+61 silly addNameRange     '4.0.0-rc4',
+61 silly addNameRange     '3.5.1',
+61 silly addNameRange     '4.0.0',
+61 silly addNameRange     '3.5.2',
+61 silly addNameRange     '4.1.0',
+61 silly addNameRange     '4.1.1',
+61 silly addNameRange     '3.5.3',
+61 silly addNameRange     '4.1.2',
+61 silly addNameRange     '3.6.0',
+61 silly addNameRange     '4.2.0',
+61 silly addNameRange     '3.7.0',
+61 silly addNameRange     '3.8.0',
+61 silly addNameRange     '4.3.0',
+61 silly addNameRange     '4.3.1',
+61 silly addNameRange     '3.8.1',
+61 silly addNameRange     '4.3.2',
+61 silly addNameRange     '3.9.0',
+61 silly addNameRange     '4.4.0',
+61 silly addNameRange     '4.4.1',
+61 silly addNameRange     '3.10.0',
+61 silly addNameRange     '3.10.1',
+61 silly addNameRange     '3.10.2',
+61 silly addNameRange     '3.10.3',
+61 silly addNameRange     '3.10.4',
+61 silly addNameRange     '4.4.2',
+61 silly addNameRange     '3.10.5',
+61 silly addNameRange     '4.4.3',
+61 silly addNameRange     '3.11.0',
+61 silly addNameRange     '4.4.4',
+61 silly addNameRange     '3.12.0',
+61 silly addNameRange     '3.12.1',
+61 silly addNameRange     '4.4.5',
+61 silly addNameRange     '3.13.0',
+61 silly addNameRange     '4.5.0',
+61 silly addNameRange     '4.5.1',
+61 silly addNameRange     '3.14.0',
+61 silly addNameRange     '4.6.0',
+61 silly addNameRange     '4.6.1',
+61 silly addNameRange     '3.15.0',
+61 silly addNameRange     '4.7.0',
+61 silly addNameRange     '3.15.1',
+61 silly addNameRange     '4.7.1',
+61 silly addNameRange     '3.15.2',
+61 silly addNameRange     '4.7.2',
+61 silly addNameRange     '4.7.3',
+61 silly addNameRange     '3.15.3',
+61 silly addNameRange     '4.7.4',
+61 silly addNameRange     '3.16.0',
+61 silly addNameRange     '4.8.0',
+61 silly addNameRange     '3.16.1',
+61 silly addNameRange     '4.8.1',
+61 silly addNameRange     '3.16.2',
+61 silly addNameRange     '4.8.2',
+61 silly addNameRange     '3.16.3',
+61 silly addNameRange     '3.16.4',
+61 silly addNameRange     '4.8.3',
+61 silly addNameRange     '3.16.5',
+61 silly addNameRange     '3.16.6',
+61 silly addNameRange     '4.8.4',
+61 silly addNameRange     '3.16.7',
+61 silly addNameRange     '4.8.5',
+61 silly addNameRange     '3.16.8',
+61 silly addNameRange     '4.8.6',
+61 silly addNameRange     '3.16.9',
+61 silly addNameRange     '4.8.7',
+61 silly addNameRange     '3.16.10',
+61 silly addNameRange     '4.8.8',
+61 silly addNameRange     '3.17.0',
+61 silly addNameRange     '3.17.1',
+61 silly addNameRange     '4.9.0',
+61 silly addNameRange     '3.17.2',
+61 silly addNameRange     '4.9.1',
+61 silly addNameRange     '4.9.2',
+61 silly addNameRange     '3.17.3',
+61 silly addNameRange     '4.9.3',
+61 silly addNameRange     '3.17.4',
+61 silly addNameRange     '4.9.4',
+61 silly addNameRange     '3.17.5',
+61 silly addNameRange     '4.9.5',
+61 silly addNameRange     '3.17.6',
+61 silly addNameRange     '3.17.7',
+61 silly addNameRange     '4.9.6',
+61 silly addNameRange     '4.9.7',
+61 silly addNameRange     '3.17.8',
+61 silly addNameRange     '4.9.8',
+61 silly addNameRange     '3.18.0',
+61 silly addNameRange     '3.18.1',
+61 silly addNameRange     '4.10.0',
+61 silly addNameRange     '3.18.2',
+61 silly addNameRange     '4.10.1',
+61 silly addNameRange     '5.0.0-alpha.1',
+61 silly addNameRange     '3.18.3',
+61 silly addNameRange     '4.10.2',
+61 silly addNameRange     '3.18.4',
+61 silly addNameRange     '4.10.3',
+61 silly addNameRange     '4.10.4',
+61 silly addNameRange     '4.10.5',
+61 silly addNameRange     '3.18.5',
+61 silly addNameRange     '3.18.6',
+61 silly addNameRange     '4.10.6',
+61 silly addNameRange     '4.10.7',
+61 silly addNameRange     '3.19.0',
+61 silly addNameRange     '4.10.8',
+61 silly addNameRange     '4.11.0',
+61 silly addNameRange     '3.19.1',
+61 silly addNameRange     '4.11.1',
+61 silly addNameRange     '3.19.2',
+61 silly addNameRange     '4.11.2',
+61 silly addNameRange     '3.20.0',
+61 silly addNameRange     '4.12.0',
+61 silly addNameRange     '3.20.1',
+61 silly addNameRange     '4.12.1',
+61 silly addNameRange     '4.12.2',
+61 silly addNameRange     '3.20.2',
+61 silly addNameRange     '4.12.3',
+61 silly addNameRange     '3.20.3',
+61 silly addNameRange     '4.12.4',
+61 silly addNameRange     '3.21.0',
+61 silly addNameRange     '4.13.0',
+61 silly addNameRange     '3.21.1',
+61 silly addNameRange     '4.13.1',
+61 silly addNameRange     '5.0.0-alpha.2',
+61 silly addNameRange     '3.21.2',
+61 silly addNameRange     '4.13.2',
+61 silly addNameRange     '4.13.3',
+61 silly addNameRange     '4.13.4' ] ]
+62 silly addNamed express@4.13.4
+63 verbose addNamed "4.13.4" is a plain semver version for express
+64 silly cache afterAdd morgan@1.7.0
+65 verbose afterAdd C:\Users\Shido\AppData\Roaming\npm-cache\morgan\1.7.0\package\package.json not in flight; writing
+66 verbose afterAdd C:\Users\Shido\AppData\Roaming\npm-cache\morgan\1.7.0\package\package.json written
+67 silly cache afterAdd express@4.13.4
+68 verbose afterAdd C:\Users\Shido\AppData\Roaming\npm-cache\express\4.13.4\package\package.json not in flight; writing
+69 verbose afterAdd C:\Users\Shido\AppData\Roaming\npm-cache\express\4.13.4\package\package.json written
+70 silly install resolved [ { name: 'morgan',
+70 silly install resolved     description: 'HTTP request logger middleware for node.js',
+70 silly install resolved     version: '1.7.0',
+70 silly install resolved     contributors: [ [Object], [Object] ],
+70 silly install resolved     license: 'MIT',
+70 silly install resolved     repository:
+70 silly install resolved      { type: 'git',
+70 silly install resolved        url: 'git+https://github.com/expressjs/morgan.git' },
+70 silly install resolved     dependencies:
+70 silly install resolved      { 'basic-auth': '~1.0.3',
+70 silly install resolved        debug: '~2.2.0',
+70 silly install resolved        depd: '~1.1.0',
+70 silly install resolved        'on-finished': '~2.3.0',
+70 silly install resolved        'on-headers': '~1.0.1' },
+70 silly install resolved     devDependencies:
+70 silly install resolved      { istanbul: '0.4.2',
+70 silly install resolved        mocha: '2.4.5',
+70 silly install resolved        split: '1.0.0',
+70 silly install resolved        supertest: '1.1.0' },
+70 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'README.md', 'index.js' ],
+70 silly install resolved     engines: { node: '>= 0.8.0' },
+70 silly install resolved     scripts:
+70 silly install resolved      { test: 'mocha --check-leaks --reporter spec --bail',
+70 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot',
+70 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec' },
+70 silly install resolved     gitHead: '5da5ff1f5446e3f3ff29d29a2d6582712612bf89',
+70 silly install resolved     bugs: { url: 'https://github.com/expressjs/morgan/issues' },
+70 silly install resolved     homepage: 'https://github.com/expressjs/morgan',
+70 silly install resolved     _id: 'morgan@1.7.0',
+70 silly install resolved     _shasum: 'eb10ca8e50d1abe0f8d3dad5c0201d052d981c62',
+70 silly install resolved     _from: 'morgan@>=1.7.0 <2.0.0',
+70 silly install resolved     _npmVersion: '1.4.28',
+70 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+70 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+70 silly install resolved     dist:
+70 silly install resolved      { shasum: 'eb10ca8e50d1abe0f8d3dad5c0201d052d981c62',
+70 silly install resolved        tarball: 'http://registry.npmjs.org/morgan/-/morgan-1.7.0.tgz' },
+70 silly install resolved     _npmOperationalInternal:
+70 silly install resolved      { host: 'packages-6-west.internal.npmjs.com',
+70 silly install resolved        tmp: 'tmp/morgan-1.7.0.tgz_1455857999079_0.07957377028651536' },
+70 silly install resolved     directories: {},
+70 silly install resolved     _resolved: 'https://registry.npmjs.org/morgan/-/morgan-1.7.0.tgz',
+70 silly install resolved     readme: 'ERROR: No README data found!' },
+70 silly install resolved   { name: 'express',
+70 silly install resolved     description: 'Fast, unopinionated, minimalist web framework',
+70 silly install resolved     version: '4.13.4',
+70 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+70 silly install resolved     contributors:
+70 silly install resolved      [ [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object] ],
+70 silly install resolved     license: 'MIT',
+70 silly install resolved     repository:
+70 silly install resolved      { type: 'git',
+70 silly install resolved        url: 'git+https://github.com/expressjs/express.git' },
+70 silly install resolved     keywords:
+70 silly install resolved      [ 'express',
+70 silly install resolved        'framework',
+70 silly install resolved        'sinatra',
+70 silly install resolved        'web',
+70 silly install resolved        'rest',
+70 silly install resolved        'restful',
+70 silly install resolved        'router',
+70 silly install resolved        'app',
+70 silly install resolved        'api' ],
+70 silly install resolved     dependencies:
+70 silly install resolved      { accepts: '~1.2.12',
+70 silly install resolved        'array-flatten': '1.1.1',
+70 silly install resolved        'content-disposition': '0.5.1',
+70 silly install resolved        'content-type': '~1.0.1',
+70 silly install resolved        cookie: '0.1.5',
+70 silly install resolved        'cookie-signature': '1.0.6',
+70 silly install resolved        debug: '~2.2.0',
+70 silly install resolved        depd: '~1.1.0',
+70 silly install resolved        'escape-html': '~1.0.3',
+70 silly install resolved        etag: '~1.7.0',
+70 silly install resolved        finalhandler: '0.4.1',
+70 silly install resolved        fresh: '0.3.0',
+70 silly install resolved        'merge-descriptors': '1.0.1',
+70 silly install resolved        methods: '~1.1.2',
+70 silly install resolved        'on-finished': '~2.3.0',
+70 silly install resolved        parseurl: '~1.3.1',
+70 silly install resolved        'path-to-regexp': '0.1.7',
+70 silly install resolved        'proxy-addr': '~1.0.10',
+70 silly install resolved        qs: '4.0.0',
+70 silly install resolved        'range-parser': '~1.0.3',
+70 silly install resolved        send: '0.13.1',
+70 silly install resolved        'serve-static': '~1.10.2',
+70 silly install resolved        'type-is': '~1.6.6',
+70 silly install resolved        'utils-merge': '1.0.0',
+70 silly install resolved        vary: '~1.0.1' },
+70 silly install resolved     devDependencies:
+70 silly install resolved      { after: '0.8.1',
+70 silly install resolved        ejs: '2.3.4',
+70 silly install resolved        istanbul: '0.4.2',
+70 silly install resolved        marked: '0.3.5',
+70 silly install resolved        mocha: '2.3.4',
+70 silly install resolved        should: '7.1.1',
+70 silly install resolved        supertest: '1.1.0',
+70 silly install resolved        'body-parser': '~1.14.2',
+70 silly install resolved        'connect-redis': '~2.4.1',
+70 silly install resolved        'cookie-parser': '~1.4.1',
+70 silly install resolved        'cookie-session': '~1.2.0',
+70 silly install resolved        'express-session': '~1.13.0',
+70 silly install resolved        jade: '~1.11.0',
+70 silly install resolved        'method-override': '~2.3.5',
+70 silly install resolved        morgan: '~1.6.1',
+70 silly install resolved        multiparty: '~4.1.2',
+70 silly install resolved        vhost: '~3.0.1' },
+70 silly install resolved     engines: { node: '>= 0.10.0' },
+70 silly install resolved     files: [ 'LICENSE', 'History.md', 'Readme.md', 'index.js', 'lib/' ],
+70 silly install resolved     scripts:
+70 silly install resolved      { test: 'mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/',
+70 silly install resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/ test/acceptance/',
+70 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/',
+70 silly install resolved        'test-tap': 'mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/' },
+70 silly install resolved     gitHead: '193bed2649c55c1fd362e46cd4702c773f3e7434',
+70 silly install resolved     bugs: { url: 'https://github.com/expressjs/express/issues' },
+70 silly install resolved     homepage: 'https://github.com/expressjs/express',
+70 silly install resolved     _id: 'express@4.13.4',
+70 silly install resolved     _shasum: '3c0b76f3c77590c8345739061ec0bd3ba067ec24',
+70 silly install resolved     _from: 'express@>=4.13.4 <5.0.0',
+70 silly install resolved     _npmVersion: '1.4.28',
+70 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+70 silly install resolved     maintainers: [ [Object] ],
+70 silly install resolved     dist:
+70 silly install resolved      { shasum: '3c0b76f3c77590c8345739061ec0bd3ba067ec24',
+70 silly install resolved        tarball: 'http://registry.npmjs.org/express/-/express-4.13.4.tgz' },
+70 silly install resolved     directories: {},
+70 silly install resolved     _resolved: 'https://registry.npmjs.org/express/-/express-4.13.4.tgz',
+70 silly install resolved     readme: 'ERROR: No README data found!' } ]
+71 info install morgan@1.7.0 into C:\Users\Shido\Documents\gdev lessons\angularlist
+72 info install express@4.13.4 into C:\Users\Shido\Documents\gdev lessons\angularlist
+73 info installOne morgan@1.7.0
+74 verbose installOne of morgan to C:\Users\Shido\Documents\gdev lessons\angularlist not in flight; installing
+75 info installOne express@4.13.4
+76 verbose installOne of express to C:\Users\Shido\Documents\gdev lessons\angularlist not in flight; installing
+77 verbose lock using C:\Users\Shido\AppData\Roaming\npm-cache\_locks\morgan-866c90b0ebdaedd3.lock for C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan
+78 verbose lock using C:\Users\Shido\AppData\Roaming\npm-cache\_locks\express-c03c7632958bd555.lock for C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express
+79 silly install write writing morgan 1.7.0 to C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan
+80 silly install write writing express 4.13.4 to C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express
+81 verbose unbuild node_modules\morgan
+82 verbose unbuild node_modules\express
+83 info preuninstall morgan@1.7.0
+84 info preuninstall express@4.13.4
+85 info uninstall morgan@1.7.0
+86 info uninstall express@4.13.4
+87 verbose unbuild rmStuff morgan@1.7.0 from C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules
+88 info postuninstall morgan@1.7.0
+89 verbose unbuild rmStuff express@4.13.4 from C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules
+90 info postuninstall express@4.13.4
+91 silly gentlyRm C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan is being purged from base C:\Users\Shido\Documents\gdev lessons\angularlist
+92 verbose gentlyRm don't care about contents; nuking C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan
+93 silly gentlyRm C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express is being purged from base C:\Users\Shido\Documents\gdev lessons\angularlist
+94 verbose gentlyRm don't care about contents; nuking C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express
+95 silly vacuum-fs purging C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan
+96 silly vacuum-fs purging C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express
+97 silly vacuum-fs quitting because other entries in C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules
+98 verbose tar unpack C:\Users\Shido\AppData\Roaming\npm-cache\morgan\1.7.0\package.tgz
+99 verbose tar unpacking to C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan
+100 silly gentlyRm C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan is being purged
+101 verbose gentlyRm don't care about contents; nuking C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan
+102 silly gunzTarPerm modes [ '777', '666' ]
+103 silly vacuum-fs removing C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules
+104 error tar.unpack untar error C:\Users\Shido\AppData\Roaming\npm-cache\morgan\1.7.0\package.tgz
+105 silly vacuum-fs finished vacuuming up to C:\Users\Shido\Documents\gdev lessons\angularlist
+106 verbose tar unpack C:\Users\Shido\AppData\Roaming\npm-cache\express\4.13.4\package.tgz
+107 verbose tar unpacking to C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express
+108 silly gentlyRm C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express is being purged
+109 verbose gentlyRm don't care about contents; nuking C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express
+110 silly vacuum-fs Error: EPERM: operation not permitted, lstat 'C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express'
+110 silly vacuum-fs     at Error (native)
+111 verbose unlock done using C:\Users\Shido\AppData\Roaming\npm-cache\_locks\morgan-866c90b0ebdaedd3.lock for C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan
+112 verbose unlock done using C:\Users\Shido\AppData\Roaming\npm-cache\_locks\express-c03c7632958bd555.lock for C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\express
+113 verbose fstream_path C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan
+114 verbose fstream_type Directory
+115 verbose fstream_class DirWriter
+116 verbose stack Error: EPERM: operation not permitted, mkdir 'C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan'
+116 verbose stack     at Error (native)
+117 verbose fstream_stack C:\Program Files\nodejs\node_modules\npm\node_modules\fstream\lib\dir-writer.js:35:25
+117 verbose fstream_stack C:\Program Files\nodejs\node_modules\npm\node_modules\mkdirp\index.js:47:53
+117 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+118 verbose cwd C:\Users\Shido\Documents\gdev lessons\angularlist
+119 error Windows_NT 10.0.10586
+120 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "morgan" "express" "--save"
+121 error node v4.2.4
+122 error npm  v2.14.12
+123 error path C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan
+124 error code EPERM
+125 error errno -4048
+126 error syscall mkdir
+127 error Error: EPERM: operation not permitted, mkdir 'C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan'
+127 error     at Error (native)
+127 error  { [Error: EPERM: operation not permitted, mkdir 'C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan']
+127 error   errno: -4048,
+127 error   code: 'EPERM',
+127 error   syscall: 'mkdir',
+127 error   path: 'C:\\Users\\Shido\\Documents\\gdev lessons\\angularlist\\node_modules\\morgan',
+127 error   fstream_type: 'Directory',
+127 error   fstream_path: 'C:\\Users\\Shido\\Documents\\gdev lessons\\angularlist\\node_modules\\morgan',
+127 error   fstream_class: 'DirWriter',
+127 error   fstream_stack:
+127 error    [ 'C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\fstream\\lib\\dir-writer.js:35:25',
+127 error      'C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\mkdirp\\index.js:47:53',
+127 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+128 error Please try running this command again as root/Administrator.
+129 verbose exit [ -4048, true ]
+130 verbose unbuild node_modules\morgan
+131 silly gentlyRm C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan is being purged from base C:\Users\Shido\Documents\gdev lessons\angularlist
+132 verbose gentlyRm don't care about contents; nuking C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan
+133 silly vacuum-fs Error: EPERM: operation not permitted, lstat 'C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan'
+133 silly vacuum-fs     at Error (native)
+134 error error rolling back Error: EPERM: operation not permitted, lstat 'C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan'
+134 error error rolling back     at Error (native)
+134 error error rolling back  { [Error: EPERM: operation not permitted, lstat 'C:\Users\Shido\Documents\gdev lessons\angularlist\node_modules\morgan']
+134 error error rolling back   errno: -4048,
+134 error error rolling back   code: 'EPERM',
+134 error error rolling back   syscall: 'lstat',
+134 error error rolling back   path: 'C:\\Users\\Shido\\Documents\\gdev lessons\\angularlist\\node_modules\\morgan' }
