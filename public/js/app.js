@@ -1,7 +1,8 @@
-var app angular.module('ngTodo',[]);
+var app = angular.module('ngTodo',[]);
+
 
 app.controller('listController',function ($scope){
-  $scope.todoList = ['add'];
+  $scope.todoList = [''];
 
 
   $scope.saveTodo = function(){

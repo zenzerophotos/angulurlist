@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='ngList'>
+<html lang="en" ng-app='ngTodo'>
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -9,19 +9,19 @@
 
 </head>
 <body id='body'>
-  <div class="container" ng-controller='TodoController'>
+  <div class="container" ng-controller='listController'>
     <div class="row">
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-offset-4 col-md-4 col-sm-4">
         <div class="form-group">
-          <input type="text" class="form-control"
-          placeholder="What do you need to do?" ng-model='currentTodo'>
-          <button class="btn btn-primary btn-block"
-          ng-click='saveTodo()' type="button">Save Todo!</button>
+          <input id='input'type="text" class="form-control"
+          placeholder="Input" ng-model='currentTodo'>
+          <button id='button' class="btn btn-primary btn-block"
+          ng-click='saveTodo()' type="button">log input!</button>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-6 col-sm-6">
         <ul>
           <li class='well no-dot' ng-repeat='singleTodo in todoList'>
             {{ singleTodo }}
