@@ -1,5 +1,21 @@
+
+.logo{
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  opacity: 0.5;
+  border-radius: 50px;
+}
+
+.img{
+
+}
+
 #body{
   background-color: black;
+  background-image: url(immelogo.png);
+  height: 200px;
+  width:200px;
 }
 
 .container{
@@ -8,12 +24,35 @@
 }
 
 #input{
-  color:white;
+  color:red;
   background-color: transparent;
 }
 
 #button{
-  color:white;
+  color:grey;
   background-color: transparent;
   border:1px solid white;
+}
+
+#ul{
+  align-items: center;
+  text-decoration: none;
+}
+
+#btn-danger{
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+#btn-danger:hover{
+  background-color: red;
+  border-radius: 30px;
+  color: black;
+  font-style: bold;
+}
+
+#output{
+  text-align: center;
+  color: red;
+  align-items: center;
 }

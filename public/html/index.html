@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" ng-app='ngTodo'>
 <head>
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA48rjAPLp8gAFAAUAvQrRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERERERERAREREREREREREREzMzMREREREzMzMzERERETMiIjMxERETMyMyMzERERMzMzMzMxEREzMzMzMzERETNEM0QzMRERNEQzREMxERE0QzM0QzERETMzMzMzMRETMzMzMzMzERMzMzMzMzMREzMxEREzMxARERERERERCAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAA" rel="icon" type="image/x-icon" />
   <meta charset="UTF-8">
   <title>Document</title>
+  <script src="socket.io/socket.io.js"></script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
-
 </head>
 <body id='body'>
+  <div class="container">
+      <div class="img">
+    </div>
+  </div>
   <div class="container" ng-controller='listController'>
     <div class="row">
+
       <div class="col-md-offset-4 col-md-4 col-sm-4">
-        <div class="form-group">
-          <input id='input'type="text" class="form-control"
-          placeholder="Input" ng-model='currentTodo'>
-          <button id='button' class="btn btn-primary btn-block"
-          ng-click='saveTodo()' type="button">log input!</button>
+          <div class="form-group">
+            <input id='input'type="text" class="form-control"
+            placeholder="Message" ng-model='currentTodo'>
+            <button id='button' class="btn btn-primary btn-block"
+            ng-click='saveTodo()' type="button">Send message</button>
+          </div>
         </div>
-      </div>
     </div>
-    <div class="row">
-      <div class="col-md-6 col-sm-6">
-        <ul>
-          <li class='well no-dot' ng-repeat='singleTodo in todoList'>
-            {{ singleTodo }}
-            <span class="glyphicon glyphicon-arrow-up pull-right" ng-if='$index !== 0' ng-click='moveUp(singleTodo)'></span>
-            <button class="btn btn-info btn-sm pull-right" ng-click='editTodo(singleTodo)'>Edit</button>
-            <button class="btn btn-danger btn-sm pull-right" ng-click='removeTodo(singleTodo)'>X</button>
-          </li>
+    <div class="row"id="ul">
+      <div class="col-md-offset-3 col-md-6 col-sm-6">
+        <div id='output' ng-repeat='singleTodo in todoList'>  {{ singleTodo }}</div>
+        <!-- <ul >
+          <li id="button" class='well no-dot' ng-repeat='singleTodo in todoList'> -->
+
+
+            <!-- <button class="btn btn-info btn-sm pull-right" ng-click='editTodo(singleTodo)'>Edit</button> -->
+            <!-- <button  id="btn-danger" class="btn btn-danger btn-sm pull-right" ng-click='removeTodo(singleTodo)'>X</button>
+          </li> -->
         </ul>
       </div>
     </div>
