@@ -1,42 +1,32 @@
 
-.logo{
-  background-color: white;
-  height: 100px;
-  width: 100px;
-  opacity: 0.5;
-  border-radius: 50px;
-}
 
-.img{
-
-}
 
 #body{
-  background-color: black;
-  background-image: url(immelogo.png);
-  height: 200px;
-  width:200px;
+  background-color:black;
 }
 
 .container{
-  margin-top: 75px;
+  margin-top: 10px;
   align-items: center;
 }
 
 #input{
-  color:red;
+  color:#f800ff;
   background-color: transparent;
+  text-align: center;
+  border:1px solid #f800ff;
 }
 
 #button{
   color:grey;
   background-color: transparent;
-  border:1px solid white;
+  border:1px solid #f800ff;
 }
 
 #ul{
   align-items: center;
   text-decoration: none;
+
 }
 
 #btn-danger{
@@ -53,6 +43,6 @@
 
 #output{
   text-align: center;
-  color: red;
+  color:#f800ff;
   align-items: center;
 }
