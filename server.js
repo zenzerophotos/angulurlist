@@ -29,3 +29,25 @@ server.get('/', function(req,res){
 server.listen(8080,function(){
   console.log('port 8080 running'+8080);
 });
+
+//
+// var app = require('express')();
+// var server = require('http').Server(app);
+// var io = require('socket.io')(server);
+//
+//
+//
+//
+// io.on('connection', function(socket){
+//   socket.on('chat message', function(msg){
+//     io.emit('chat message', msg);
+//   });
+// });
+//
+// app.get('/', function(req,res){
+//   res.sendFile(__dirname+'/index.html');
+// });
+//
+// server.listen(8080, function(){
+//   console.log('preparing to grow legs and run '+8080);
+// });
