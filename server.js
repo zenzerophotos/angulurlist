@@ -1,9 +1,17 @@
 var express = require('express'),
     logger = require('morgan')('dev'),
     server = express();
+//     express = require('express')();
+//     server = require('http').createServer(express);
+//     io = require('socket.io')(server);
+// io.on('connection', function(){ /* … */ });
       // io = require('socket.io').listen(server);
       //
-    
+      var io = require('socket.io')();
+      io.on('connection', function(socket){
+        console.log('working')
+      });
+
 
 server.use(logger);
 server.use(express.static(__dirname+'/public'));
